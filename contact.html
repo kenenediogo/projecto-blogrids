@@ -70,7 +70,7 @@
                 <div class="contact-form">
                     <p>Por favor use o formulário abaixo para poder nos contactar</p>
 
-                    <form>
+                    <form name="contact" method="POST" data-netlify="true">
                         <!-- caixa nome -->
                         <div class="form-group">
                             <label for="name">Nome</label>
@@ -216,10 +216,10 @@
                     <h3>NEWSLETTER</h3>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit dolore perferendis optio ducimus expedita aliquid.</p>
 
-                    <form>
-                        <input type="text" placeholder="Seu Nome">
-                        <input type="email" placeholder="Seu Email">
-                        <button>Enviar</button>
+                    <form name="contact" method="POST" data-netlify="true">
+                        <input type="text" placeholder="Seu Nome" name="name">
+                        <input type="email" placeholder="Seu Email" name="email">
+                        <button type="submit">Enviar</button>
                     </form>
                 </div> <!-- fim newsletter -->
 
