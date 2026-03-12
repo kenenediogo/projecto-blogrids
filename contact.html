@@ -71,6 +71,8 @@
                     <p>Por favor use o formulário abaixo para poder nos contactar</p>
 
                     <form name="contact" method="POST" data-netlify="true">
+                        <input type="hidden" name="form-name" value="contact">
+                        
                         <!-- caixa nome -->
                         <div class="form-group">
                             <label for="name">Nome</label>
@@ -79,7 +81,7 @@
 
                         <!-- caixa email -->
                         <div class="form-group">
-                            <label for="name">Email</label>
+                            <label for="email">Email</label>
                             <input type="email" name="email" id="email" placeholder="Digite seu email">
                         </div> <!-- fim caixa email -->
 
@@ -93,12 +95,6 @@
                         <div class="form-group">
                             <label for="message">Mensagem</label>
                             <textarea name="message" id="message" rows="10" placeholder="Digite sua mensagem"></textarea>
-                            <!-- <textarea 
-                                name="message" 
-                                id="message" 
-                                rows="10"
-                                placeholder="Digite sua mensagem"
-                            ></textarea> -->
                         </div> <!-- fim caixa mensagem -->
 
                         <input type="submit" value="Enviar">
